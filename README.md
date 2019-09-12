@@ -1,2 +1,3 @@
-# simplecommit
-https://github.com/lightningchen34/simplecommit
+# Simple Commit
+
+a simple git commit message generator
