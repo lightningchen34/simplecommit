@@ -7,7 +7,7 @@ def commit(type, subject, issue=""):
 	message = "git commit -m \"{}: {}{}\"".format(type, subject, issue_msg)
 	os.system(message)
 
-def _run():
+def run():
 	print("type of commit: ")
 	print("\t1. build -- changes that affect the build system or external dependencies")
 	print("\t2. docs -- documentation only changes")
@@ -44,8 +44,8 @@ def _run():
 	types = ["", "build", "docs", "feat", "fix", "refactor", "style", "test", "revert"]
 	commit(types[type], subject, issue)
 
-def run():
+def main():
 	try:
-		_run()
+		run()
 	except KeyboardInterrupt as e:
 		pass
